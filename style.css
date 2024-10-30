@@ -1,0 +1,149 @@
+img{
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(216, 58, 153);
+    text-shadow: 2px 2px 5px rgb(64, 64, 64);
+    animation:  comparsa 1s linear;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@keyframes comparsa{
+    0%{
+         transform: translateY(100px); 
+        
+    }
+
+    100%{
+        transform: translateY(0px); 
+       
+    }
+}
+
+nav{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(109, 119, 255);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0; /* Posiziona la navbar all'inizio della pagina */
+    left: 0; /* Assicurati che inizi dal bordo sinistro */
+    z-index: 1000; /* Porta la navbar sopra agli altri elementi */
+}
+
+.link{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+body{
+    margin: 0%;
+    background-color: rgb(228, 215, 217);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contenitore{
+    margin-top: 20px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card{
+    background-color: rgb(131, 210, 255);
+    margin: 10px;
+    width: 300px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-bottom: 30px;
+}
+
+img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+
+}
+
+button{
+    border-radius: 8px;
+    bottom: 3px;
+}
+
+.card:hover{
+    scale: 1.1;
+    box-shadow: 2px 2px 5px rgb(84, 83, 83);
+}
+
+h3{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 254, 254);
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+.paragrafo{
+    background-color: rgb(247, 251, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: comparsa 1s ;
+}
+
+footer{
+    background-color: rgb(28, 28, 109);
+    padding-bottom: 80px;
+    left: 0;
+}
+
+.scritte-footer{
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .contenitore{
+       flex-direction: column;
+       align-items: center;
+       
+        
+    }
+
+    .card{
+        width: 80%;
+    }
+}
